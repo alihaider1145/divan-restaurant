@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Divan Restaurant — Homemade Turkish cuisine in the heart of Prague. Authentic recipes, fresh ingredients, traditional culture." />
+
+  <title>Divan Restaurant — Authentic Turkish Cuisine in Prague</title>
+
+  <!-- Favicon placeholder — replace with actual favicon -->
+  <!-- <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" /> -->
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <nav class="site-nav__inner" aria-label="Main navigation">
+
+        <!-- Logo -->
+        <a href="index.html" class="site-nav__logo" aria-label="Divan Restaurant — Home">
+          <!--
+            LOGO: Replace the text below with an <img> once you have the file:
+            <img src="assets/images/logo.svg" alt="Divan Restaurant" />
+          -->
+          <span class="site-nav__logo-text">Divan</span>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="site-nav__links" role="list">
+          <li><a href="index.html"    class="site-nav__link" aria-current="page">Home</a></li>
+          <li><a href="menu.html"     class="site-nav__link">Menu</a></li>
+          <li><a href="about.html"    class="site-nav__link">About</a></li>
+          <li><a href="location.html" class="site-nav__link">Location</a></li>
+          <li><a href="contact.html"  class="site-nav__link">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <a href="contact.html" class="btn btn--secondary site-nav__cta">
+          Reserve a Table
+        </a>
+
+        <!-- Hamburger (mobile only) -->
+        <button
+          class="site-nav__hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <span class="site-nav__hamburger-bar"></span>
+          <span class="site-nav__hamburger-bar"></span>
+          <span class="site-nav__hamburger-bar"></span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE DRAWER ===== -->
+  <div
+    class="nav-backdrop"
+    aria-hidden="true"
+  ></div>
+
+  <nav
+    id="mobile-drawer"
+    class="nav-drawer"
+    aria-label="Mobile navigation"
+  >
+    <ul class="nav-drawer__links" role="list">
+      <li><a href="index.html"    class="nav-drawer__link" aria-current="page">Home</a></li>
+      <li><a href="menu.html"     class="nav-drawer__link">Menu</a></li>
+      <li><a href="about.html"    class="nav-drawer__link">About</a></li>
+      <li><a href="location.html" class="nav-drawer__link">Location</a></li>
+      <li><a href="contact.html"  class="nav-drawer__link">Contact</a></li>
+    </ul>
+    <div class="nav-drawer__cta">
+      <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-label="Welcome to Divan Restaurant">
+
+      <!-- Background image -->
+      <div class="hero__bg" aria-hidden="true">
+        <img
+          src="assets/images/divan-hero.jpg"
+          alt="The warm, welcoming interior of Divan Restaurant in Prague"
+        />
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Authentic Turkish Kitchen
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Prague
+          </p>
+
+          <h1 class="hero__title">
+            A Taste of Turkey,<br>
+            <em>Heart of Prague</em>
+          </h1>
+
+          <p class="hero__subtitle">
+            Homemade recipes, traditional culture, and the warmth of Istanbul —
+            brought to the streets of Prague.
+          </p>
+
+          <div class="hero__actions">
+            <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+            <a href="menu.html"    class="btn btn--secondary">View Menu</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+      </div>
+
+    </section>
+    <!-- /HERO -->
+
+
+    <!-- ===== FEATURES STRIP ===== -->
+    <section class="features-strip" aria-label="What makes us special">
+      <div class="features-strip__grid">
+
+        <div class="features-strip__item">
+          <img
+            src="assets/images/divan-one-food.jpg"
+            alt="Freshly prepared Turkish bread coming out of the oven"
+            loading="lazy"
+          />
+          <span class="features-strip__label">Homemade Daily</span>
+        </div>
+
+        <div class="features-strip__item">
+          <img
+            src="assets/images/divan-four-food.jpg"
+            alt="Fresh vegetables and spices used in our kitchen"
+            loading="lazy"
+          />
+          <span class="features-strip__label">Fresh Ingredients</span>
+        </div>
+
+        <div class="features-strip__item">
+          <img
+            src="assets/images/divan-three-food.jpg"
+            alt="Traditional Turkish dishes passed down through generations"
+            loading="lazy"
+          />
+          <span class="features-strip__label">Traditional Recipes</span>
+        </div>
+
+        <div class="features-strip__item">
+          <img
+            src="assets/images/divan-six-interior.jpg"
+            alt="Our restaurant located in the centre of Prague"
+            loading="lazy"
+          />
+          <span class="features-strip__label">Prague City Centre</span>
+        </div>
+
+      </div>
+    </section>
+    <!-- /FEATURES STRIP -->
+
+
+    <!-- ===== STORY / ABOUT ===== -->
+    <section class="story section" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="story__grid">
+
+          <!-- Text column -->
+          <div class="story__body reveal">
+            <p class="eyebrow">Our Story</p>
+            <h2 class="section-title" id="story-heading">
+              Homemade, Quality<br>Turkish Cuisine in Prague
+            </h2>
+            <hr class="divider" />
+            <p class="story__text">
+              Divan was born from a simple belief — that the best Turkish food
+              isn't found in fancy restaurants, but in someone's home. We
+              brought that home to Prague.
+            </p>
+            <a href="about.html" class="btn btn--link">
+              Read Our Story
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <!-- Image column -->
+          <div class="story__image reveal reveal--delay-1">
+            <img
+              src="assets/images/divan-eight-interior.jpg"
+              alt="The cosy brick-walled dining room at Divan Restaurant"
+              loading="lazy"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /STORY -->
+
+
+    <!-- ===== FEATURED DISHES ===== -->
+    <section class="dishes section" aria-labelledby="dishes-heading">
+      <div class="container">
+
+        <header class="dishes__header reveal">
+          <p class="eyebrow">From the Kitchen</p>
+          <h2 class="section-title" id="dishes-heading">Featured Dishes</h2>
+          <p class="section-subtitle">
+            Every dish is made fresh, every day — from recipes passed down
+            through generations.
+          </p>
+        </header>
+
+        <div class="dishes__grid">
+
+          <!-- Card 1: Lamb Adana -->
+          <article class="dish-card reveal reveal--delay-1" aria-label="Lamb Adana">
+            <div class="dish-card__image">
+              <img
+                src="assets/images/divan-hero.jpg"
+                alt="Lamb Adana — spiced minced lamb on charcoal, served with lavash and fresh mezze"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__title">Lahmacun</h3>
+              <p class="dish-card__description">
+                Crispy thin-dough Turkish flatbread topped with spiced minced meat, fresh tomatoes, and herbs. 
+                Roll it up and take a bite of Istanbul.
+              </p>
+              <footer class="dish-card__footer">
+                <span class="badge">Signature</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 2: İskender Kebab -->
+          <article class="dish-card reveal reveal--delay-2" aria-label="İskender Kebab">
+            <div class="dish-card__image">
+              <img
+                src="assets/images/divan-one-food.jpg"
+                alt="İskender Kebab — thinly sliced döner on pide bread with tomato sauce and butter"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__title">Pide</h3>
+              <p class="dish-card__description">
+                Stone-baked bread boat generously filled with seasoned meat and melted cheese. 
+                Turkey's answer to comfort food.
+              </p>
+              <footer class="dish-card__footer">
+                <span class="badge">Chef's Pick</span>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Card 3: Baklava -->
+          <article class="dish-card reveal reveal--delay-3" aria-label="Baklava">
+            <div class="dish-card__image">
+              <img
+                src="assets/images/divan-three-food.jpg"
+                alt="Baklava — honey-soaked filo pastry with crushed pistachios, made in-house daily"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-card__body">
+              <h3 class="dish-card__title">İzmir Köfte</h3>
+              <p class="dish-card__description">
+                Tender grilled meatballs slow-cooked with roasted peppers, tomatoes, and bulgur rice. 
+                A hearty classic from the Aegean coast.
+              </p>
+              <footer class="dish-card__footer">
+                <span class="badge">Dessert</span>
+              </footer>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- See full menu link -->
+        <div class="dishes__cta reveal">
+          <a href="menu.html" class="btn btn--link">
+            See Full Menu
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- /FEATURED DISHES -->
+
+
+    <!-- ===== LOCATION PREVIEW ===== -->
+    <section class="location section" aria-labelledby="location-heading">
+      <div class="container">
+
+        <header class="location__header reveal">
+          <p class="eyebrow">Location</p>
+          <h2 class="section-title" id="location-heading">Have A Meal With Us</h2>
+        </header>
+
+        <div class="location__grid">
+
+          <!-- Map embed -->
+          <div class="location__map reveal">
+            <!--
+              MAP: This embeds a Google Maps iframe centred on Václavské náměstí 12, Prague 1.
+              The iframe src uses a public embed — no API key required.
+              Replace the q= parameter with the exact address if needed.
+            -->
+            <iframe
+              title="Divan Restaurant location on Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.172!2d14.4241!3d50.0808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zVsOhY2xhdnNrw6kgbsOhbcSbc3TDrSAxMiwgUHJhZ3VlIDE!5e0!3m2!1sen!2scz!4v1"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Info panel -->
+          <div class="location__info reveal reveal--delay-1">
+
+            <div class="location__info-row">
+              <div class="location__info-icon" aria-hidden="true">📍</div>
+              <div>
+                <p class="location__info-label">Address</p>
+                <p class="location__info-value">
+                  Václavské náměstí 12<br>Prague 1, Czech Republic
+                </p>
+              </div>
+            </div>
+
+            <div class="location__info-row">
+              <div class="location__info-icon" aria-hidden="true">🕐</div>
+              <div>
+                <p class="location__info-label">Opening Hours</p>
+                <p class="location__info-value">Open daily · 11:00 – 22:00</p>
+              </div>
+            </div>
+
+            <div class="location__info-row">
+              <div class="location__info-icon" aria-hidden="true">📞</div>
+              <div>
+                <p class="location__info-label">Reservations</p>
+                <p class="location__info-value">
+                  <!-- Replace with real phone number -->
+                  <a href="tel:+420000000000" style="color: inherit;">+420 000 000 000</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="location__directions">
+              <a
+                href="https://maps.google.com/?q=Václavské+náměstí+12,+Prague+1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--secondary"
+              >
+                Get Directions
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /LOCATION -->
+
+  </main>
+  <!-- /MAIN -->
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="site-footer__grid">
+
+        <!-- Brand column -->
+        <div class="site-footer__brand">
+          <p class="site-footer__brand-name">Divan</p>
+          <p class="site-footer__brand-tagline">
+            Homemade Turkish cuisine<br>in the heart of Prague.
+          </p>
+        </div>
+
+        <!-- Nav links -->
+        <nav aria-label="Footer navigation">
+          <p class="site-footer__nav-title">Pages</p>
+          <ul class="site-footer__nav-links" role="list">
+            <li><a href="index.html"    class="site-footer__nav-link">Home</a></li>
+            <li><a href="menu.html"     class="site-footer__nav-link">Menu</a></li>
+            <li><a href="about.html"    class="site-footer__nav-link">About</a></li>
+            <li><a href="location.html" class="site-footer__nav-link">Location</a></li>
+            <li><a href="contact.html"  class="site-footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Visit column -->
+        <div>
+          <p class="site-footer__nav-title">Visit Us</p>
+          <ul class="site-footer__nav-links" role="list">
+            <li style="color: var(--color-text-secondary); font-size: var(--text-sm);">
+              Václavské náměstí 12<br>Prague 1, Czech Republic
+            </li>
+            <li style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-top: var(--space-3);">
+              Open daily · 11:00 – 22:00
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2025 Divan Restaurant. All rights reserved.</p>
+        <p class="site-footer__credit">
+          Built by <a href="#" target="_blank" rel="noopener">Zaree Studios</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+
+
+  <!-- Shared JS (defer — runs after HTML is parsed) -->
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>

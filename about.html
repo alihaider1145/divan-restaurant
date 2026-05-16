@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The story behind Divan Restaurant — homemade Turkish cuisine brought from Istanbul to the heart of Prague by a family with a simple belief." />
+
+  <title>Our Story — Divan Restaurant Prague</title>
+
+  <!-- <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" /> -->
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <nav class="site-nav__inner" aria-label="Main navigation">
+
+        <a href="index.html" class="site-nav__logo" aria-label="Divan Restaurant — Home">
+          <!--
+            Replace with: <img src="assets/images/logo.svg" alt="Divan Restaurant" />
+          -->
+          <span class="site-nav__logo-text">Divan</span>
+        </a>
+
+        <ul class="site-nav__links" role="list">
+          <li><a href="index.html"    class="site-nav__link">Home</a></li>
+          <li><a href="menu.html"     class="site-nav__link">Menu</a></li>
+          <li><a href="about.html"    class="site-nav__link" aria-current="page">About</a></li>
+          <li><a href="location.html" class="site-nav__link">Location</a></li>
+          <li><a href="contact.html"  class="site-nav__link">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="btn btn--secondary site-nav__cta">
+          Reserve a Table
+        </a>
+
+        <button
+          class="site-nav__hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <span class="site-nav__hamburger-bar"></span>
+          <span class="site-nav__hamburger-bar"></span>
+          <span class="site-nav__hamburger-bar"></span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE DRAWER ===== -->
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <nav id="mobile-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <ul class="nav-drawer__links" role="list">
+      <li><a href="index.html"    class="nav-drawer__link">Home</a></li>
+      <li><a href="menu.html"     class="nav-drawer__link">Menu</a></li>
+      <li><a href="about.html"    class="nav-drawer__link" aria-current="page">About</a></li>
+      <li><a href="location.html" class="nav-drawer__link">Location</a></li>
+      <li><a href="contact.html"  class="nav-drawer__link">Contact</a></li>
+    </ul>
+    <div class="nav-drawer__cta">
+      <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero" aria-labelledby="about-hero-heading">
+      <div class="container">
+        <div class="page-hero__content">
+          <p class="eyebrow" style="animation: fadeInUp 0.6s ease both;">Our Story</p>
+          <h1 class="page-hero__title" id="about-hero-heading">
+            Cooked with<br>
+            <em>Memory &amp; Love</em>
+          </h1>
+          <p class="page-hero__description">
+            Divan was born from a simple belief — that the best Turkish food
+            isn't found in fancy restaurants, but in someone's home.
+            We brought that home to Prague.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /PAGE HERO -->
+
+
+    <!-- ===== VALUES STRIP ===== -->
+    <section class="about-values" aria-label="Our values">
+      <div class="about-values__grid">
+
+        <div class="about-values__item reveal">
+          <span class="about-values__icon" aria-hidden="true">🫕</span>
+          <h2 class="about-values__title">Homemade Daily</h2>
+          <p class="about-values__text">
+            Every sauce, every bread, every spread is made from scratch
+            each morning — no shortcuts, no shortcuts.
+          </p>
+        </div>
+
+        <div class="about-values__item reveal reveal--delay-1">
+          <span class="about-values__icon" aria-hidden="true">🌿</span>
+          <h2 class="about-values__title">Fresh Ingredients</h2>
+          <p class="about-values__text">
+            We source vegetables, herbs, and spices daily. If it
+            isn't fresh, it doesn't go on the plate.
+          </p>
+        </div>
+
+        <div class="about-values__item reveal reveal--delay-2">
+          <span class="about-values__icon" aria-hidden="true">📜</span>
+          <h2 class="about-values__title">Traditional Recipes</h2>
+          <p class="about-values__text">
+            Our recipes were passed down through generations —
+            unchanged, unmodified, unapologetically authentic.
+          </p>
+        </div>
+
+        <div class="about-values__item reveal reveal--delay-3">
+          <span class="about-values__icon" aria-hidden="true">🏙️</span>
+          <h2 class="about-values__title">Prague City Centre</h2>
+          <p class="about-values__text">
+            Located at the heart of Václavské náměstí, we're easy
+            to find and impossible to forget.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <!-- /VALUES STRIP -->
+
+
+    <!-- ===== STORY BODY ===== -->
+    <section class="about-story section" aria-labelledby="story-body-heading">
+      <div class="container">
+        <div class="about-story__grid">
+
+          <!-- Text -->
+          <div class="about-story__body reveal">
+            <p class="eyebrow">How It Began</p>
+            <h2 class="section-title" id="story-body-heading">
+              From Istanbul's Kitchens<br>to Prague's Streets
+            </h2>
+            <hr class="divider" />
+
+            <p class="about-story__lead">
+              "The best meal I ever had was at my grandmother's table
+              in Gaziantep. I wanted everyone to feel that."
+            </p>
+
+            <p class="about-story__text">
+              Divan opened its doors with one obsession: recreating the
+              honest, comforting food of a Turkish household. Not the
+              tourist-facing version, not an adapted Western interpretation —
+              the real thing. The börek your mother makes at 6am. The lentil
+              soup that fixes everything.
+            </p>
+
+            <p class="about-story__text">
+              Prague was the natural home. A city that understands craft,
+              values tradition, and welcomes the world with open arms.
+              Since opening, Divan has become a gathering point for the
+              Turkish community and for anyone who wants to understand
+              what homemade truly means.
+            </p>
+
+            <p class="about-story__text">
+              Every dish on our menu carries a memory. Every ingredient
+              is chosen with the same care a grandmother chooses what
+              goes into her pot.
+            </p>
+          </div>
+
+          <!-- Images — two staggered photos -->
+          <div class="about-story__images reveal reveal--delay-1">
+            <div class="about-story__image">
+              <!--
+                IMAGE: Replace with a photo of food prep / kitchen.
+                Recommended: 600×800px portrait.
+                Example: src="assets/images/about-kitchen.jpg"
+              -->
+              <img
+                src="assets/images/about-kitchen.jpg"
+                alt="Our chef preparing fresh Turkish bread in the kitchen"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-story__image">
+              <!--
+                IMAGE: Replace with a photo of the dining room or a dish.
+                Recommended: 600×800px portrait.
+                Example: src="assets/images/about-dining.jpg"
+              -->
+              <img
+                src="assets/images/about-dining.jpg"
+                alt="Guests dining at Divan Restaurant's warm interior"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /STORY BODY -->
+
+
+    <!-- ===== FOUNDERS / TEAM ===== -->
+    <section class="about-founders section" aria-labelledby="founders-heading">
+      <div class="container">
+
+        <header class="about-founders__header reveal">
+          <p class="eyebrow">The People Behind It</p>
+          <h2 class="section-title" id="founders-heading">Meet the Family</h2>
+          <p class="section-subtitle">
+            Divan is a family project — built on shared memories,
+            divided responsibilities, and a mutual love of good food.
+          </p>
+        </header>
+
+        <div class="about-founders__grid">
+
+          <!-- Founder 1 -->
+          <article class="founder-card reveal reveal--delay-1" aria-label="Founder profile">
+            <div class="founder-card__avatar">
+              <!--
+                AVATAR: Replace with an actual photo.
+                Recommended: 160×160px square.
+                Example: src="assets/images/founder-1.jpg"
+              -->
+              <img
+                src="assets/images/founder-1.jpg"
+                alt="Portrait of the head chef and co-founder"
+                loading="lazy"
+              />
+            </div>
+            <div class="founder-card__info">
+              <h3 class="founder-card__name">
+                <!--  Replace with real name -->
+                Mehmet Yılmaz
+              </h3>
+              <p class="founder-card__role">Head Chef &amp; Co-founder</p>
+              <p class="founder-card__bio">
+                Trained in Istanbul and Gaziantep, Mehmet brings 20 years
+                of professional kitchen experience — and a lifetime of
+                eating his grandmother's cooking.
+              </p>
+            </div>
+          </article>
+
+          <!-- Founder 2 -->
+          <article class="founder-card reveal reveal--delay-2" aria-label="Founder profile">
+            <div class="founder-card__avatar">
+              <!--
+                AVATAR: Replace with an actual photo.
+                Example: src="assets/images/founder-2.jpg"
+              -->
+              <img
+                src="assets/images/founder-2.jpg"
+                alt="Portrait of the operations co-founder"
+                loading="lazy"
+              />
+            </div>
+            <div class="founder-card__info">
+              <h3 class="founder-card__name">
+                <!--  Replace with real name -->
+                Ayşe Yılmaz
+              </h3>
+              <p class="founder-card__role">Operations &amp; Co-founder</p>
+              <p class="founder-card__bio">
+                Ayşe manages the front of house with the same warmth
+                she grew up with — making every guest feel like they've
+                just arrived at a family dinner.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- /FOUNDERS -->
+
+
+    <!-- ===== CTA STRIP ===== -->
+    <section class="about-cta-strip" aria-label="Visit us">
+      <div class="container reveal">
+        <h2 class="about-cta-strip__title">Come Taste the Story</h2>
+        <p class="about-cta-strip__sub">
+          Every visit is a seat at the family table.
+          Reserve yours today.
+        </p>
+        <div class="about-cta-strip__actions">
+          <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+          <a href="menu.html"    class="btn btn--secondary">Browse the Menu</a>
+        </div>
+      </div>
+    </section>
+    <!-- /CTA STRIP -->
+
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="site-footer__grid">
+
+        <div class="site-footer__brand">
+          <p class="site-footer__brand-name">Divan</p>
+          <p class="site-footer__brand-tagline">
+            Homemade Turkish cuisine<br>in the heart of Prague.
+          </p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <p class="site-footer__nav-title">Pages</p>
+          <ul class="site-footer__nav-links" role="list">
+            <li><a href="index.html"    class="site-footer__nav-link">Home</a></li>
+            <li><a href="menu.html"     class="site-footer__nav-link">Menu</a></li>
+            <li><a href="about.html"    class="site-footer__nav-link">About</a></li>
+            <li><a href="location.html" class="site-footer__nav-link">Location</a></li>
+            <li><a href="contact.html"  class="site-footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <p class="site-footer__nav-title">Visit Us</p>
+          <ul class="site-footer__nav-links" role="list">
+            <li style="color: var(--color-text-secondary); font-size: var(--text-sm);">
+              Václavské náměstí 12<br>Prague 1, Czech Republic
+            </li>
+            <li style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-top: var(--space-3);">
+              Open daily · 11:00 – 22:00
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2025 Divan Restaurant. All rights reserved.</p>
+        <p class="site-footer__credit">
+          Built by <a href="#" target="_blank" rel="noopener">Zaree Studios</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Divan Restaurant menu — authentic Turkish soups, salads, steak döner, and appetizers. Made fresh daily in Prague." />
+
+  <title>Menu — Divan Restaurant Prague</title>
+
+  <!-- <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" /> -->
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <nav class="site-nav__inner" aria-label="Main navigation">
+
+        <a href="index.html" class="site-nav__logo" aria-label="Divan Restaurant — Home">
+          <span class="site-nav__logo-text">Divan</span>
+        </a>
+
+        <ul class="site-nav__links" role="list">
+          <li><a href="index.html"    class="site-nav__link">Home</a></li>
+          <li><a href="menu.html"     class="site-nav__link" aria-current="page">Menu</a></li>
+          <li><a href="about.html"    class="site-nav__link">About</a></li>
+          <li><a href="location.html" class="site-nav__link">Location</a></li>
+          <li><a href="contact.html"  class="site-nav__link">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="btn btn--secondary site-nav__cta">
+          Reserve a Table
+        </a>
+
+        <button
+          class="site-nav__hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <span class="site-nav__hamburger-bar"></span>
+          <span class="site-nav__hamburger-bar"></span>
+          <span class="site-nav__hamburger-bar"></span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE DRAWER ===== -->
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <nav id="mobile-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <ul class="nav-drawer__links" role="list">
+      <li><a href="index.html"    class="nav-drawer__link">Home</a></li>
+      <li><a href="menu.html"     class="nav-drawer__link" aria-current="page">Menu</a></li>
+      <li><a href="about.html"    class="nav-drawer__link">About</a></li>
+      <li><a href="location.html" class="nav-drawer__link">Location</a></li>
+      <li><a href="contact.html"  class="nav-drawer__link">Contact</a></li>
+    </ul>
+    <div class="nav-drawer__cta">
+      <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+    </div>
+  </nav>
+
+
+  <!-- ===== MAIN ===== -->
+  <main id="main-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero" aria-labelledby="menu-hero-heading">
+      <div class="container">
+        <div class="page-hero__content">
+          <p class="eyebrow">Divan Restaurant</p>
+          <h1 class="page-hero__title" id="menu-hero-heading">
+            Our Menu
+          </h1>
+          <p class="page-hero__description">
+            Every dish is made fresh, every day — from recipes passed
+            down through generations of Turkish home cooking.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /PAGE HERO -->
+
+
+    <!-- ===== STICKY CATEGORY TABS ===== -->
+    <!--
+      JS below handles:
+      1. Highlighting the active tab as you scroll past each section
+      2. Smooth-scrolling to the section when a tab is clicked
+    -->
+    <div class="menu-tabs" role="navigation" aria-label="Menu categories">
+      <div class="menu-tabs__inner">
+        <button class="menu-tabs__tab is-active" data-target="soups">Soups</button>
+        <button class="menu-tabs__tab" data-target="salads">Salads</button>
+        <button class="menu-tabs__tab" data-target="doner">Steak Döner</button>
+        <button class="menu-tabs__tab" data-target="appetizers">Appetizers</button>
+      </div>
+    </div>
+
+
+    <!-- ===== MENU CONTENT ===== -->
+    <section class="menu-content" aria-label="Full menu">
+      <div class="container">
+
+        <!-- ── SOUPS ── -->
+        <div class="menu-category" id="soups">
+          <header class="menu-category__header">
+            <p class="eyebrow">Polévky</p>
+            <h2 class="menu-category__title">Soups</h2>
+            <p class="menu-category__description">
+              Warm and nourishing — the right way to start.
+            </p>
+          </header>
+
+          <ul class="menu-list" role="list">
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Mercimek</h3>
+                <p class="menu-item__description">
+                  Lentil soup with vegetables and spices.
+                </p>
+              </div>
+              <span class="menu-item__price">90 Kč</span>
+            </li>
+
+          </ul>
+        </div>
+        <!-- /SOUPS -->
+
+
+        <!-- ── SALADS ── -->
+        <div class="menu-category" id="salads">
+          <header class="menu-category__header">
+            <p class="eyebrow">Saláty</p>
+            <h2 class="menu-category__title">Salads</h2>
+            <p class="menu-category__description">
+              Fresh, simply dressed, made to share or start.
+            </p>
+          </header>
+
+          <ul class="menu-list" role="list">
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Rajče</h3>
+                <p class="menu-item__description">
+                  Tomatoes, cucumber, onion, peppers, olive oil,
+                  pomegranate dressing, lemon, walnuts.
+                </p>
+              </div>
+              <span class="menu-item__price">150 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Karışık Salata</h3>
+                <p class="menu-item__description">
+                  Mixed vegetables, tomatoes, cucumber, carrot,
+                  peppers, olive oil, lemon, onion, spices.
+                </p>
+              </div>
+              <span class="menu-item__price">120 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Karışık Peynirli Salata</h3>
+                <p class="menu-item__description">
+                  Mixed salad with fresh vegetables, cheese, olive oil, lemon.
+                </p>
+              </div>
+              <span class="menu-item__price">140 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Çoban Salatası</h3>
+                <p class="menu-item__description">
+                  Tomatoes, cucumber, peppers, onion, parsley, olive oil, spices.
+                </p>
+                <div class="menu-item__tags">
+                  <span class="badge">Vegan</span>
+                </div>
+              </div>
+              <span class="menu-item__price">120 Kč</span>
+            </li>
+
+          </ul>
+        </div>
+        <!-- /SALADS -->
+
+
+        <!-- ── STEAK DÖNER ── -->
+        <div class="menu-category" id="doner">
+          <header class="menu-category__header">
+            <p class="eyebrow">Steak Döner</p>
+            <h2 class="menu-category__title">Steak Döner</h2>
+            <p class="menu-category__description">
+              Beef steak döner — served your way.
+            </p>
+          </header>
+
+          <ul class="menu-list" role="list">
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Sendviç</h3>
+                <p class="menu-item__description">
+                  Beef steak döner (90 g) with fresh vegetables and homemade sauce.
+                </p>
+              </div>
+              <span class="menu-item__price">190 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Dürüm</h3>
+                <p class="menu-item__description">
+                  Beef steak döner (100 g) in wrap with vegetables and sauce.
+                </p>
+              </div>
+              <span class="menu-item__price">230 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Porce</h3>
+                <p class="menu-item__description">
+                  Beef steak döner (130 g) with bread, salad and sauce.
+                </p>
+              </div>
+              <span class="menu-item__price">270 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">S Rýží</h3>
+                <p class="menu-item__description">
+                  Beef steak döner with rice, salad and bread.
+                </p>
+              </div>
+              <span class="menu-item__price">290 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">S Hranolkami</h3>
+                <p class="menu-item__description">
+                  Beef steak döner with fries, salad and sauce.
+                </p>
+              </div>
+              <span class="menu-item__price">270 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">İskender</h3>
+                <p class="menu-item__description">
+                  Beef steak döner with tomato sauce, yogurt, butter and bread.
+                </p>
+                <div class="menu-item__tags">
+                  <span class="badge">Signature</span>
+                </div>
+              </div>
+              <span class="menu-item__price">350 Kč</span>
+            </li>
+
+          </ul>
+        </div>
+        <!-- /STEAK DÖNER -->
+
+
+        <!-- ── APPETIZERS ── -->
+        <div class="menu-category" id="appetizers">
+          <header class="menu-category__header">
+            <p class="eyebrow">Předkrmy</p>
+            <h2 class="menu-category__title">Appetizers</h2>
+            <p class="menu-category__description">
+              Order a few and share — the Turkish way.
+            </p>
+          </header>
+
+          <ul class="menu-list" role="list">
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Çiğ Köfte</h3>
+                <p class="menu-item__description">
+                  Spiced bulgur with vegetables and herbs, served with salad.
+                </p>
+                <div class="menu-item__tags">
+                  <span class="badge">Vegan</span>
+                </div>
+              </div>
+              <span class="menu-item__price">150 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Karışık Meze Tabağı</h3>
+                <p class="menu-item__description">
+                  Selection of traditional dips and spreads, served with bread.
+                </p>
+              </div>
+              <span class="menu-item__price">350 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Hummus</h3>
+                <p class="menu-item__description">
+                  Chickpeas, tahini, olive oil, lemon, garlic.
+                </p>
+                <div class="menu-item__tags">
+                  <span class="badge">Vegan</span>
+                </div>
+              </div>
+              <span class="menu-item__price">100 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Haydari</h3>
+                <p class="menu-item__description">
+                  Yogurt with garlic, mint and olive oil.
+                </p>
+                <div class="menu-item__tags">
+                  <span class="badge">Vegetarian</span>
+                </div>
+              </div>
+              <span class="menu-item__price">100 Kč</span>
+            </li>
+
+            <li class="menu-item reveal">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Yaprak Sarma</h3>
+                <p class="menu-item__description">
+                  Vine leaves stuffed with rice and herbs.
+                </p>
+                <div class="menu-item__tags">
+                  <span class="badge">Vegan</span>
+                </div>
+              </div>
+              <span class="menu-item__price">120 Kč</span>
+            </li>
+
+          </ul>
+        </div>
+        <!-- /APPETIZERS -->
+
+      </div>
+    </section>
+    <!-- /MENU CONTENT -->
+
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="site-footer__grid">
+
+        <div class="site-footer__brand">
+          <p class="site-footer__brand-name">Divan</p>
+          <p class="site-footer__brand-tagline">
+            Homemade Turkish cuisine<br>in the heart of Prague.
+          </p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <p class="site-footer__nav-title">Pages</p>
+          <ul class="site-footer__nav-links" role="list">
+            <li><a href="index.html"    class="site-footer__nav-link">Home</a></li>
+            <li><a href="menu.html"     class="site-footer__nav-link">Menu</a></li>
+            <li><a href="about.html"    class="site-footer__nav-link">About</a></li>
+            <li><a href="location.html" class="site-footer__nav-link">Location</a></li>
+            <li><a href="contact.html"  class="site-footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <p class="site-footer__nav-title">Visit Us</p>
+          <ul class="site-footer__nav-links" role="list">
+            <li style="color: var(--color-text-secondary); font-size: var(--text-sm);">
+              Václavské náměstí 12<br>Prague 1, Czech Republic
+            </li>
+            <li style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-top: var(--space-3);">
+              Open daily · 11:00 – 22:00
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2025 Divan Restaurant. All rights reserved.</p>
+        <p class="site-footer__credit">
+          Built by <a href="#" target="_blank" rel="noopener">Zaree Studios</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+
+  <!--
+    MENU PAGE — Sticky tab highlighting on scroll.
+    This is page-specific JS, added inline here so main.js stays generic.
+  -->
+  <script>
+  (function () {
+    'use strict';
+
+    const initMenuTabs = () => {
+      const tabs       = document.querySelectorAll('.menu-tabs__tab');
+      const categories = document.querySelectorAll('.menu-category');
+      if (!tabs.length || !categories.length) return;
+
+      // Click: scroll to section
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const targetId = tab.getAttribute('data-target');
+          const target   = document.getElementById(targetId);
+          if (!target) return;
+
+          // Offset for fixed nav + sticky tabs
+          const navHeight  = document.querySelector('.site-nav')?.offsetHeight || 68;
+          const tabsHeight = document.querySelector('.menu-tabs')?.offsetHeight || 48;
+          const offset     = navHeight + tabsHeight + 16;
+
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        });
+      });
+
+      // Scroll: highlight active tab via IntersectionObserver
+      const setActiveTab = (id) => {
+        tabs.forEach(tab => {
+          tab.classList.toggle('is-active', tab.getAttribute('data-target') === id);
+        });
+      };
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              setActiveTab(entry.target.id);
+            }
+          });
+        },
+        {
+          rootMargin: '-30% 0px -60% 0px', // trigger when section is in the upper-middle viewport
+          threshold: 0
+        }
+      );
+
+      categories.forEach(cat => observer.observe(cat));
+    };
+
+    document.addEventListener('DOMContentLoaded', initMenuTabs);
+  })();
+  </script>
+
+</body>
+</html>

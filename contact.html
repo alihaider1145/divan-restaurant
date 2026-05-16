@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reserve a table at Divan Restaurant in Prague. Contact us by phone, email, or fill in the reservation form." />
+
+  <title>Reserve a Table — Divan Restaurant Prague</title>
+
+  <!-- <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" /> -->
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-nav" role="banner">
+    <div class="container">
+      <nav class="site-nav__inner" aria-label="Main navigation">
+
+        <a href="index.html" class="site-nav__logo" aria-label="Divan Restaurant — Home">
+          <span class="site-nav__logo-text">Divan</span>
+        </a>
+
+        <ul class="site-nav__links" role="list">
+          <li><a href="index.html"    class="site-nav__link">Home</a></li>
+          <li><a href="menu.html"     class="site-nav__link">Menu</a></li>
+          <li><a href="about.html"    class="site-nav__link">About</a></li>
+          <li><a href="location.html" class="site-nav__link">Location</a></li>
+          <li><a href="contact.html"  class="site-nav__link" aria-current="page">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="btn btn--secondary site-nav__cta" aria-current="page">
+          Reserve a Table
+        </a>
+
+        <button
+          class="site-nav__hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <span class="site-nav__hamburger-bar"></span>
+          <span class="site-nav__hamburger-bar"></span>
+          <span class="site-nav__hamburger-bar"></span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE DRAWER ===== -->
+  <div class="nav-backdrop" aria-hidden="true"></div>
+
+  <nav id="mobile-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <ul class="nav-drawer__links" role="list">
+      <li><a href="index.html"    class="nav-drawer__link">Home</a></li>
+      <li><a href="menu.html"     class="nav-drawer__link">Menu</a></li>
+      <li><a href="about.html"    class="nav-drawer__link">About</a></li>
+      <li><a href="location.html" class="nav-drawer__link">Location</a></li>
+      <li><a href="contact.html"  class="nav-drawer__link" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav-drawer__cta">
+      <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+    </div>
+  </nav>
+
+
+  <!-- ===== MAIN ===== -->
+  <main id="main-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero" aria-labelledby="contact-hero-heading">
+      <div class="container">
+        <div class="page-hero__content">
+          <p class="eyebrow">Reservations</p>
+          <h1 class="page-hero__title" id="contact-hero-heading">
+            Reserve a Table
+          </h1>
+          <p class="page-hero__description">
+            Book your seat at the family table. We'll confirm your reservation
+            within a few hours by phone or email.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /PAGE HERO -->
+
+
+    <!-- ===== CONTACT BODY ===== -->
+    <section class="contact-body" aria-labelledby="contact-hero-heading">
+      <div class="container">
+        <div class="contact-body__grid">
+
+          <!-- ── RESERVATION FORM ── -->
+          <div class="reveal">
+            <h2 class="reservation-form__title">Make a Reservation</h2>
+            <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-8); line-height: var(--leading-loose);">
+              Fill in the form and we'll get back to you to confirm.
+              For same-day bookings, please call us directly.
+            </p>
+
+            <!--
+              FORM NOTE: This is a static site, so the form submits to Formspree
+              (or any similar service). Replace the action URL with your own endpoint.
+
+              Formspree setup:
+              1. Go to https://formspree.io and create a free account
+              2. Create a new form — you'll get a URL like:
+                 https://formspree.io/f/YOUR_FORM_ID
+              3. Replace the action below with that URL
+
+              Alternatively, use Netlify Forms, Web3Forms, etc.
+              The form will work as-is for testing (the submit button shows a
+              success message via JS without actually sending).
+            -->
+            <form
+              class="reservation-form"
+              id="reservation-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              novalidate
+            >
+
+              <!-- Full name -->
+              <div class="form-group">
+                <label class="form-label" for="full-name">Full Name *</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="full-name"
+                  name="full_name"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <!-- Email + Phone -->
+              <div class="form-group form-group--row">
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address *</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number</label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+420 000 000 000"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+
+              <!-- Date + Time -->
+              <div class="form-group form-group--row">
+                <div class="form-group">
+                  <label class="form-label" for="date">Preferred Date *</label>
+                  <input
+                    class="form-input"
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="time">Preferred Time *</label>
+                  <input
+                    class="form-input"
+                    type="time"
+                    id="time"
+                    name="time"
+                    min="11:00"
+                    max="21:30"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Guests -->
+              <div class="form-group">
+                <label class="form-label" for="guests">Number of Guests *</label>
+                <div class="form-select-wrapper">
+                  <select
+                    class="form-select form-input"
+                    id="guests"
+                    name="guests"
+                    required
+                  >
+                    <option value="" disabled selected>Select number of guests</option>
+                    <option value="1">1 guest</option>
+                    <option value="2">2 guests</option>
+                    <option value="3">3 guests</option>
+                    <option value="4">4 guests</option>
+                    <option value="5">5 guests</option>
+                    <option value="6">6 guests</option>
+                    <option value="7+">7 or more — please call us</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Special requests -->
+              <div class="form-group">
+                <label class="form-label" for="requests">Special Requests</label>
+                <textarea
+                  class="form-textarea"
+                  id="requests"
+                  name="requests"
+                  placeholder="Dietary requirements, allergies, special occasions, high chair needed…"
+                ></textarea>
+              </div>
+
+              <!-- Feedback messages -->
+              <div
+                class="form-message form-message--success"
+                id="form-success"
+                role="alert"
+                aria-live="polite"
+              >
+                ✓ Thank you! Your reservation request has been sent. We'll confirm within a few hours.
+              </div>
+
+              <div
+                class="form-message form-message--error"
+                id="form-error"
+                role="alert"
+                aria-live="polite"
+              >
+                Something went wrong. Please try again or call us directly.
+              </div>
+
+              <!-- Submit -->
+              <div class="form-submit">
+                <button type="submit" class="btn btn--primary" id="form-submit-btn">
+                  Send Reservation Request
+                </button>
+              </div>
+
+            </form>
+          </div>
+          <!-- /FORM -->
+
+
+          <!-- ── SIDEBAR ── -->
+          <aside class="contact-sidebar reveal reveal--delay-1" aria-label="Contact information">
+
+            <!-- Contact details card -->
+            <div class="contact-info-card">
+              <h2 class="contact-info-card__title">Contact &amp; Hours</h2>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon" aria-hidden="true">📞</div>
+                <div>
+                  <p class="contact-detail__label">Phone</p>
+                  <p class="contact-detail__value">
+                    <!-- Replace with real phone number -->
+                    <a href="tel:+420000000000">+420 000 000 000</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon" aria-hidden="true">✉️</div>
+                <div>
+                  <p class="contact-detail__label">Email</p>
+                  <p class="contact-detail__value">
+                    <!-- Replace with real email address -->
+                    <a href="mailto:hello@divanprague.cz">hello@divanprague.cz</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon" aria-hidden="true">🕐</div>
+                <div>
+                  <p class="contact-detail__label">Opening Hours</p>
+                  <p class="contact-detail__value">
+                    Monday – Sunday<br>11:00 – 22:00
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-detail__icon" aria-hidden="true">📍</div>
+                <div>
+                  <p class="contact-detail__label">Address</p>
+                  <p class="contact-detail__value">
+                    Václavské náměstí 12<br>Prague 1, Czech Republic
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <!-- /CONTACT DETAILS CARD -->
+
+            <!-- Map -->
+            <div class="contact-map">
+              <!--
+                MAP: Same embed as homepage. Replace the src with your exact
+                Google Maps embed URL for the real address.
+              -->
+              <iframe
+                title="Divan Restaurant on Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.172!2d14.4241!3d50.0808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zVsOhY2xhdnNrw6kgbsOhbcSbc3TDrSAxMiwgUHJhZ3VlIDE!5e0!3m2!1sen!2scz!4v1"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+          </aside>
+          <!-- /SIDEBAR -->
+
+        </div>
+      </div>
+    </section>
+    <!-- /CONTACT BODY -->
+
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="site-footer__grid">
+
+        <div class="site-footer__brand">
+          <p class="site-footer__brand-name">Divan</p>
+          <p class="site-footer__brand-tagline">
+            Homemade Turkish cuisine<br>in the heart of Prague.
+          </p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <p class="site-footer__nav-title">Pages</p>
+          <ul class="site-footer__nav-links" role="list">
+            <li><a href="index.html"    class="site-footer__nav-link">Home</a></li>
+            <li><a href="menu.html"     class="site-footer__nav-link">Menu</a></li>
+            <li><a href="about.html"    class="site-footer__nav-link">About</a></li>
+            <li><a href="location.html" class="site-footer__nav-link">Location</a></li>
+            <li><a href="contact.html"  class="site-footer__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <p class="site-footer__nav-title">Visit Us</p>
+          <ul class="site-footer__nav-links" role="list">
+            <li style="color: var(--color-text-secondary); font-size: var(--text-sm);">
+              Václavské náměstí 12<br>Prague 1, Czech Republic
+            </li>
+            <li style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-top: var(--space-3);">
+              Open daily · 11:00 – 22:00
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2025 Divan Restaurant. All rights reserved.</p>
+        <p class="site-footer__credit">
+          Built by <a href="#" target="_blank" rel="noopener">Zaree Studios</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+
+  <!--
+    CONTACT PAGE — Form validation & submission handling.
+    Page-specific, kept inline so main.js stays generic.
+  -->
+  <script>
+  (function () {
+    'use strict';
+
+    const initReservationForm = () => {
+      const form       = document.getElementById('reservation-form');
+      const submitBtn  = document.getElementById('form-submit-btn');
+      const successMsg = document.getElementById('form-success');
+      const errorMsg   = document.getElementById('form-error');
+      if (!form) return;
+
+      // Set minimum date to today
+      const dateInput = document.getElementById('date');
+      if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+      }
+
+      const showMessage = (el) => {
+        successMsg.classList.remove('is-visible');
+        errorMsg.classList.remove('is-visible');
+        el.classList.add('is-visible');
+        el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      };
+
+      const setLoading = (isLoading) => {
+        submitBtn.disabled = isLoading;
+        submitBtn.textContent = isLoading
+          ? 'Sending…'
+          : 'Send Reservation Request';
+      };
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Basic HTML5 validation check
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        setLoading(true);
+
+        /*
+          If you've set up Formspree (or similar), this fetch will
+          send the form data to your endpoint.
+          If the action is still the placeholder, it will fail gracefully
+          and show the error message.
+        */
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            form.reset();
+            showMessage(successMsg);
+          } else {
+            showMessage(errorMsg);
+          }
+        } catch {
+          showMessage(errorMsg);
+        } finally {
+          setLoading(false);
+        }
+      });
+    };
+
+    document.addEventListener('DOMContentLoaded', initReservationForm);
+  })();
+  </script>
+
+</body>
+</html>
